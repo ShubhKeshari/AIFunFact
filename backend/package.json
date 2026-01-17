@@ -1,0 +1,19 @@
+{
+  "name": "ai-fun-facts-api",
+  "version": "1.0.0",
+  "description": "Express server that generates random fun facts using Gemini API",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
