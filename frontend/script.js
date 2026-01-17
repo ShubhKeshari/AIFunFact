@@ -6,7 +6,7 @@ const errorBox = document.getElementById('errorBox');
 // Check server health on page load
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://localhost:5000/health');
+        const response = await fetch('https://aifunfact.onrender.com/health');
         if (!response.ok) {
             throw new Error('Server not responding');
         }
@@ -26,7 +26,7 @@ async function getFunFact() {
     loadingDiv.classList.add('show');
     
     try {
-        const response = await fetch('http://localhost:5000/fun-fact', {
+        const response = await fetch('https://aifunfact.onrender.com/fun-fact', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
